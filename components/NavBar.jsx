@@ -8,7 +8,7 @@ import { MdVideoCameraFront } from "react-icons/md";
 
 export default function NavBar() {
   return (
-    <nav className=" h-14 fixed left-0 right-0 flex items-center justify-between px-4 md:px-6 border-b border-gray-200">
+    <nav className=" h-14 fixed left-0 right-0 flex items-center justify-between px-4 md:px-6">
       <div className="flex items-center gap-x-4">
         <Bars3Icon className="h-6" />
         <Image src={YoutubeLogo} className="w-28" alt="Youtube Logo" />
