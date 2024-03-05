@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <NavBar />
       <SideBar />
-      <section className="bg-green-500 absolute left-48 top-14 right-0 bottom-0 overflow-y-auto p-8">
+      <section className="bg-green-500 absolute left-56 top-14 right-0 bottom-0 overflow-y-auto p-8">
         <div className="h-[10000px] bg-white">Helloooooooooo</div>
       </section>
     </main>

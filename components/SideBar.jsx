@@ -64,15 +64,21 @@ export default function SideBar() {
           Matt O'Leary
         </button>
         <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
-          <GoHistory className="w-1/5 size-6"/>
+          <img 
+          src="https://yt3.ggpht.com/yQmKC-ipKp5Yinoi4dexhIi53W2ks1IgmOLxPIsiyDmAlOG6KpO9gEsfcbgnalHB_Acy2380gg=s88-c-k-c0x00ffffff-no-rj" 
+          className="w-1/5 rounded-full"/>
           Jets Talk 24/7
         </button>
         <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
-          <AiOutlinePlaySquare className="w-1/5 size-6"/>
+          <img
+          src="https://yt3.ggpht.com/ytc/AIdro_kDH_cDVIdi7X9d67FW7r3cn3_srzgthv3wH2dmPw=s88-c-k-c0x00ffffff-no-rj" 
+          className="w-1/5 rounded-full"/>
           RealBreakingNate
         </button>
-        <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
-          <LuClock4 className="w-1/5 size-6"/>
+        <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100 text-nowrap">
+          <img 
+          src="https://yt3.ggpht.com/ytc/AIdro_mwr1P2BzCaF4AGE1qloVvn78T3_aSXvuiWigUJ3A=s88-c-k-c0x00ffffff-no-rj"
+          className="w-1/5 rounded-full "/>
           Just One Cookbook
         </button>
         <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
