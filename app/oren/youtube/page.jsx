@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../../../components/NavBar.jsx";
 import SideBar from "../../../components/SideBar.jsx";
+import millify from "millify";
 
 export default function Home() {
   const Tags = [
@@ -33,7 +34,7 @@ export default function Home() {
       thumbnailUrl:
         "https://i.ytimg.com/vi/7wz6zk6ZyTE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhkuJpz46SoK6IoMW5ngUCzdY6Gw",
       views: 824000,
-      createdAt: "",
+      createdAt: "5 months ago",
     },
     {
       id: 2,
@@ -60,7 +61,7 @@ export default function Home() {
       thumbnailUrl:
         "https://i.ytimg.com/vi/1FJfxk8PINI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRc3-rnPPFtXUOLXhmPCdX6iLgeA",
       views: 348,
-      createdAt: "2 hours ago",
+      createdAt: "4 hours ago",
     },
     {
       id: 4,
@@ -116,7 +117,7 @@ export default function Home() {
             </button>
           ))}
         </div>
-        <div className="bg-white grid grid-cols-3 gap-x-3 gap-y-10 py-2">
+        <div className="bg-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-10 py-2">
           {Videos.map((video) => (
             <div data-name="video-card" className="flex flex-col gap-y-3">
               <img src={video.thumbnailUrl} className="rounded-xl" />
@@ -132,7 +133,7 @@ export default function Home() {
                   <h3 className="text-sm text-gray-500">
                     {video.channel.name}
                     <br />
-                    {video.views} views • 5 months ago
+                    {millify(video.views)} views • {video.createdAt}
                   </h3>
                 </div>
               </div>
