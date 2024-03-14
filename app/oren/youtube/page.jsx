@@ -6,23 +6,18 @@ import millify from "millify";
 
 export default function Home() {
   const [videos, setVideos] = useState([])
-  const Tags = [
-    "All",
-    "New York Jets",
-    "Mixes",
-    "Music",
-    "Live",
-    "Miranda Sings",
-    "Gaming",
-    "Podcasts",
-    "New York Jets",
-    "Mixes",
-    "Music",
-    "Live",
-    "Miranda Sings",
-    "Gaming",
-    "Podcasts",
-  ];
+  const [tags, setTags] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      const resp = await fetch('/api/tags');
+      const json = await resp.json();
+      const _tags = json.tags;
+      setTags(_tags);
+      console.log(_tags)
+    })();
+  }, [])
+
 
   useEffect(() => {
     (async () => {
@@ -33,7 +28,8 @@ export default function Home() {
     })();
   }, [])
   
- 
+
+  
 
   return (
     <main>
@@ -41,7 +37,7 @@ export default function Home() {
       <SideBar />
       <section className="bg-white absolute left-56 top-14 right-0 bottom-0 overflow-y-auto px-8">
         <div className="flex gap-x-2 overflow-x-auto no-scrollbar py-2">
-          {Tags.map((tag) => (
+          {tags.map((tag) => (
             <button className="bg-gray-100 px-4 py-2 rounded-xl whitespace-nowrap font-medium text-sm ">
               {tag}
             </button>
