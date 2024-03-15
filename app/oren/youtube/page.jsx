@@ -5,18 +5,29 @@ import SideBar from "../../../components/SideBar.jsx";
 import millify from "millify";
 
 export default function Home() {
-  const [videos, setVideos] = useState([])
+  // 1 initialize state vars
+  const [videos, setVideos] = useState([]) 
   const [tags, setTags] = useState([])
 
+  // 2 "When the page finised rendering, run this function..."
   useEffect(() => {
+
     (async () => {
+      // 4 fetch data from backend and update state vars
       const resp = await fetch('/api/tags');
-      const json = await resp.json();
+      const json = await resp.json(); // convert string (that's formatted in json) to object 
       const _tags = json.tags;
       setTags(_tags);
-      console.log(_tags)
+      console.log(_tags);
     })();
+
+
   }, [])
+
+  // useEffect(1,2) => 1 = function , 2 = dependency array – how often ro run the function
+  useEffect(() => {
+    // code
+  }, []) // run 'code' when the page renders first time
 
 
   useEffect(() => {
@@ -30,7 +41,8 @@ export default function Home() {
   
 
   
-
+  // 3 return html to render in the browser (based on empty state vars)
+  // 5 re-render after state vars get updated
   return (
     <main>
       <NavBar />
