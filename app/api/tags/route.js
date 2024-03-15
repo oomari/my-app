@@ -17,5 +17,6 @@ export async function GET() {
         "Podcasts",
       ];
 
-    return Response.json({ tags: Tags })
+    const object = { tags: Tags }
+    return Response.json(object)
 }
