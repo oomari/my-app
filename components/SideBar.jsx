@@ -101,7 +101,7 @@ export default function SideBar() {
         </button>
         <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
           <img
-            src="https://yt3.ggpht.com/ytc/AIdro_ljDfAkzSb_cSCcmV08kuzGNGhGWTs8WgzXQPit=s88-c-k-c0x00ffffff-no-rj"
+            src="https://yt3.ggpht.com/ytc/AIdro_ljDfAkzSb_cSCcmV08kuzGNGhGWTs8WgzXQPit=s88-c-k-c0x00ffffff-no-rjsettings"
             className="w-1/5 rounded-full"
           />
           GREENBEANJETSFAN
