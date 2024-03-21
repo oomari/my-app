@@ -59,13 +59,9 @@ export default function Home() {
               className="flex flex-col gap-y-3"
               key={video.id}
             >
-              {/* <Link href={"/oren/youtube/watch"}> */}
-              <img
-                src={video.thumbnailUrl}
-                className="rounded-xl"
-                onClick={() => router.push("/oren/youtube/watch")}
-              />
-              {/* </Link> */}
+              <Link href={"/oren/youtube/watch"}>
+                <img src={video.thumbnailUrl} className="rounded-xl" />
+              </Link>
 
               <div data-name="video-card-details" className="flex gap-x-3">
                 <div className="w=[12.5%]">
