@@ -38,6 +38,7 @@ export const Videos = [
       "https://i.ytimg.com/vi/1FJfxk8PINI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRc3-rnPPFtXUOLXhmPCdX6iLgeA",
     views: 348,
     createdAt: "4 hours ago",
+    comments: ["This video was great", "funny stuff"],
   },
   {
     id: 4,
@@ -51,6 +52,8 @@ export const Videos = [
       "https://i.ytimg.com/vi/4sEm5WvUWE8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyBIQW0-PL4ukWzavoI_H3IIsfIg",
     views: 4300000,
     createdAt: "4 months ago",
+    description:
+      "In this episode we find the rarest car from the 80's. Subscribe if you want to see more crazy stuff like this.",
   },
   {
     id: 5,
