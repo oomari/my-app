@@ -5,13 +5,15 @@ import { IoIosSearch, IoMdNotificationsOutline } from "react-icons/io";
 import YoutubeLogo from "/public/youtube_logo.png";
 import Image from "next/image";
 import { MdVideoCameraFront } from "react-icons/md";
-
+import Link from "next/link";
 export default function NavBar() {
   return (
     <nav className="h-14 bg-white sticky top-0 left-0 right-0 flex items-center justify-between px-4 md:px-6 overflow-hidden">
       <div className="flex items-center gap-x-4">
         <Bars3Icon className="h-6" />
-        <Image src={YoutubeLogo} className="w-28" alt="Youtube Logo" />
+        <Link href="/oren/youtube">
+          <Image src={YoutubeLogo} className="w-28" alt="Youtube Logo" />
+        </Link>
       </div>
       <div className="flex items-center w-1/2 gap-x-4">
         <SearchInput />
