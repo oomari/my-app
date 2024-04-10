@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import React from "react";
 import { useState, useEffect } from "react";
+import millify from "millify";
 
 export default function Watch() {
   const [video, setVideo] = useState({});
@@ -32,7 +33,7 @@ export default function Watch() {
               <div className="flex">
                 <div className="flex flex-col ">
                   <h1>{video.channel?.name}</h1>
-                  <h3 className="text-xs ">5.77K...</h3>
+                  <h3 className="text-xs ">{millify(video.views)} views</h3>
                 </div>
                 <div className="mx-6">
                   <button className="bg-gray-300 border-1 rounded-xl w-10 h-8">
