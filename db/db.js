@@ -11,6 +11,8 @@ export const Videos = [
       "https://i.ytimg.com/vi/7wz6zk6ZyTE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhkuJpz46SoK6IoMW5ngUCzdY6Gw",
     views: 824000,
     createdAt: "5 months ago",
+    description:
+      "In this episode we have some shady fiances cuaght cheating. Subscribe for more cheating drama on tik tok!",
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ export const Videos = [
       "https://i.ytimg.com/vi/akoAE47krt4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBT0RhykvmymbpGCN-42qBYMNEA_Q",
     views: 24000,
     createdAt: "2 days ago",
+    description:
+      "In this episode we discuss the NFL combine and go through a Mock draft. Subscribe if you want to see more Jets content.",
   },
   {
     id: 3,
@@ -39,6 +43,8 @@ export const Videos = [
     views: 348,
     createdAt: "4 hours ago",
     comments: ["This video was great", "funny stuff"],
+    description:
+      "In this episode we discuss a WR thats hitting the trading market and why the New York Jets should be All Over It. Subscribe if you want to see more New York Jets content like this.",
   },
   {
     id: 4,
@@ -67,6 +73,8 @@ export const Videos = [
       "https://i.ytimg.com/vi/tVlx27mBCmo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByp6Vpv8fH-OCNJ0LjainE5FJ1hg",
     views: 1600000,
     createdAt: "1 year ago",
+    description:
+      "In this Video we go over how to make a culinary delicacy, the famous CRISPY TAKEOUT ORANGE CHICKEN, with No Wok Required! Subscribe for more tasty treats and authentic recipes.",
   },
   {
     id: 6,
@@ -81,5 +89,7 @@ export const Videos = [
       "https://i.ytimg.com/vi/z72hgYk-5iI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnKZicODOnvFa0TgX6lnp-NMmvwA",
     views: 1200000,
     createdAt: "2 weeks ago",
+    description:
+      "This video dives deep into Gen Z's Anxiety Problem and Why Therapy May Not Be the Solution after all, Subscribe to our channel for more!",
   },
 ];
