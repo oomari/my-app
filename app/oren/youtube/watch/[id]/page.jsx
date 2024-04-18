@@ -9,6 +9,8 @@ import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { PiShareFatLight } from "react-icons/pi";
 import { LiaDownloadSolid } from "react-icons/lia";
+import { HiOutlineDotsVertical } from "react-icons/hi";
+import Link from "next/link";
 
 export default function Watch() {
   const [video, setVideo] = useState({});
@@ -45,7 +47,7 @@ export default function Watch() {
               </div>
               <h1 className="text-xl my-3 font-bold">{video.title}</h1>
 
-              <div className="flex flex-col sm:flex-row gap-y-2 justify-between">
+              <div className="flex flex-col gap-y-2  sm:flex-row justify-between">
                 <div className="flex">
                   <div className="relative size-10 flex flex-none">
                     <Image
@@ -61,10 +63,10 @@ export default function Watch() {
                     </h3>
                   </div>
                   <div className="mx-6 flex gap-x-1">
-                    <button className="bg-gray-100 border-1 rounded-full w-16 h-9">
+                    <button className="bg-gray-100 border-1 text-sm font-semibold rounded-full w-16 h-9">
                       Join
                     </button>
-                    <button className="bg-gray-100 border-1 rounded-full w-24 h-9">
+                    <button className="bg-gray-100 border-1 text-sm font-semibold rounded-full w-24 h-9">
                       Subscribe
                     </button>
                   </div>
@@ -84,7 +86,7 @@ export default function Watch() {
                   <button className="bg-gray-100 w-24 h-9 rounded-full font-semibold text-sm flex items-center justify-center gap-x-2">
                     <PiShareFatLight className="size-5" /> Share
                   </button>
-                  <button className="bg-gray-300 rounded-full hidden md:block lg:hidden xl:block w-[35%] h-9">
+                  <button className="bg-gray-100 rounded-full hidden md:block lg:hidden xl:block w-[35%] h-9">
                     <div className="flex items-center justify-center gap-x-2">
                       <LiaDownloadSolid className="size-5" />
                       <div className=" text-sm font-semibold ">Download</div>
@@ -96,7 +98,9 @@ export default function Watch() {
                   </button>
                 </div>
               </div>
-              <p>{video.description}</p>
+              <div className="bg-gray-200 rounded-lg p-4 mt-4 ">
+                <p className="text-sm max-w-64 ">{video.description}</p>
+              </div>
             </div>
           </section>
           <section className="hidden lg:flex lg:w-1/3 pt-6 pr-6">
@@ -105,14 +109,30 @@ export default function Watch() {
               className="gap-y-4 w-full flex flex-col"
             >
               {suggestedVideos.map((video) => (
-                <div data-name="video-card" className="flex gap-x-2">
-                  <img
-                    src={video.thumbnailUrl}
-                    className="h-full rounded-lg w-1/2"
-                  ></img>
-                  <div className="flex flex-col w-1/2">
-                    <h1 className="text-xs font-semibold">{video.title}</h1>
-                    <h3 className="text-xs">{video.channel.name}</h3>
+                <div data-name="video-card" className="flex group">
+                  <Link
+                    href={`/oren/youtube/watch/${video.id}`}
+                    className=" flex gap-x-2"
+                  >
+                    <img
+                      src={video.thumbnailUrl}
+                      className="rounded-md h-full w-[53%]"
+                    />
+
+                    <div className="flex flex-col w-[42%] gap-1">
+                      <h1 className="text-xs font-semibold ">{video.title}</h1>
+                      <h2 className="text-xs text-gray-600">
+                        {video.channel.name}
+                      </h2>
+                      <h3 className="text-xs text-gray-600">
+                        {millify(video.views)} views • {video.createdAt}
+                      </h3>
+                    </div>
+                  </Link>
+                  <div className="w-[5%]">
+                    {
+                      <HiOutlineDotsVertical className="invisible group-hover:visible" />
+                    }
                   </div>
                 </div>
               ))}
