@@ -99,7 +99,9 @@ export default function Watch() {
                 </div>
               </div>
               <div className="bg-gray-200 rounded-lg p-4 mt-4 ">
-                <p className="text-sm max-w-64 ">{video.description}</p>
+                <p className="text-sm whitespace-pre-wrap break-words">
+                  {video.description}
+                </p>
               </div>
             </div>
           </section>
@@ -112,15 +114,17 @@ export default function Watch() {
                 <div data-name="video-card" className="flex group">
                   <Link
                     href={`/oren/youtube/watch/${video.id}`}
-                    className=" flex gap-x-2"
+                    className="flex gap-x-2 items-start"
                   >
                     <img
                       src={video.thumbnailUrl}
-                      className="rounded-md h-full w-[53%]"
+                      className="rounded-md w-[53%] object-contain"
                     />
 
                     <div className="flex flex-col w-[42%] gap-1">
-                      <h1 className="text-xs font-semibold ">{video.title}</h1>
+                      <h1 className="text-xs font-semibold line-clamp-2 ">
+                        {video.title}
+                      </h1>
                       <h2 className="text-xs text-gray-600">
                         {video.channel.name}
                       </h2>

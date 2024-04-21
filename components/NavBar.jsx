@@ -8,7 +8,7 @@ import { MdVideoCameraFront } from "react-icons/md";
 import Link from "next/link";
 export default function NavBar() {
   return (
-    <nav className="h-14 bg-white sticky top-0 left-0 right-0 flex items-center justify-between px-4 md:px-6 overflow-hidden">
+    <nav className="z-[1] h-14 bg-white sticky top-0 left-0 right-0 flex items-center justify-between px-4 md:px-6 overflow-hidden">
       <div className="flex items-center gap-x-4">
         <Bars3Icon className="h-6" />
         <Link href="/oren/youtube">
