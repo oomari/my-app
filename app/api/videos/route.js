@@ -1,4 +1,4 @@
-import { Videos } from "@/db/db";
+import { PrismaClient } from "@prisma/client";
 export async function GET() {
   // const res = await fetch('https://data.mongodb-api.com/...', {
   //   headers: {
@@ -7,8 +7,13 @@ export async function GET() {
   //   },
   // })
   // const data = await res.json()
-
   // get videos from youtube api
+  const prisma = new PrismaClient();
+  const videos = await prisma.video.findMany({
+    include: {
+      channel: true,
+    },
+  });
 
-  return Response.json({ videos: Videos });
+  return Response.json({ videos });
 }
