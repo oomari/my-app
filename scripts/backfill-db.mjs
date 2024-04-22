@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { Videos } from "../db/db.mjs";
+
 const prisma = new PrismaClient();
 
 await prisma.video.deleteMany({});
