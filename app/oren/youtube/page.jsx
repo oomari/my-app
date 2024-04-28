@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import NavBar from "../../../components/NavBar.jsx";
 import SideBar from "../../../components/SideBar.jsx";
 import millify from "millify";
@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation.js";
 
 export default function Home() {
   const router = useRouter();
+  const pageNum = useRef(1);
+
   // 1 initialize state vars
   const [videos, setVideos] = useState([]);
   const [tags, setTags] = useState([]);
@@ -29,14 +31,25 @@ export default function Home() {
     // code
   }, []); // run 'code' when the page renders first time
 
+  /**
+   * Fetch page and store in state variable.
+   */
+  const fetchPage = async (pageNum) => {
+    const resp = await fetch(`/api/videos?page=${pageNum}`);
+    const json = await resp.json();
+    const pageVideos = json.videos;
+    const newVideos = [...videos, ...pageVideos];
+    setVideos(newVideos);
+  };
+
   useEffect(() => {
-    (async () => {
-      const resp = await fetch("/api/videos");
-      const json = await resp.json();
-      const _videos = json.videos;
-      setVideos(_videos);
-    })();
+    fetchPage(pageNum.current);
   }, []);
+
+  const handleClickLoadMore = () => {
+    pageNum.current += 1; // don't re-render yet
+    fetchPage(pageNum.current);
+  };
 
   // 3 return html to render in the browser (based on empty state vars)
   // 5 re-render after state vars get updated
@@ -64,14 +77,16 @@ export default function Home() {
               </Link>
 
               <div data-name="video-card-details" className="flex gap-x-3">
-                <div className="w=[12.5%]">
+                <div className="w-1/6 flex-none">
                   <img
                     src={video.channel.photoUrl}
                     className="rounded-full size-10"
                   />
                 </div>
                 <div>
-                  <h1 className="font-medium mb-2">{video.title}</h1>
+                  <h1 className="font-medium mb-2 line-clamp-2">
+                    {video.title}
+                  </h1>
                   <h3 className="text-sm text-gray-500">
                     {video.channel.name}
                     <br />
@@ -82,6 +97,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <button
+          onClick={handleClickLoadMore}
+          className="p-2 bg-black text-white rounded-lg mx-auto block my-6"
+        >
+          Load More
+        </button>
       </section>
     </main>
   );
