@@ -11,6 +11,7 @@ import { PiShareFatLight } from "react-icons/pi";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 export default function Watch() {
   const [video, setVideo] = useState({});
@@ -98,11 +99,7 @@ export default function Watch() {
                   </button>
                 </div>
               </div>
-              <div className="bg-gray-200 rounded-lg p-4 mt-4 ">
-                <p className="text-sm whitespace-pre-wrap break-words">
-                  {video.description}
-                </p>
-              </div>
+              <Description text={video.description} />
             </div>
           </section>
           <section className="hidden lg:flex lg:w-1/3 pt-6 pr-6">
@@ -145,5 +142,34 @@ export default function Watch() {
         </div>
       </div>
     </main>
+  );
+}
+
+function Description({ text }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = (event) => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <div
+      className={twMerge(
+        "bg-gray-200 rounded-lg p-2 mt-4 active:bg-gray-300",
+        !isOpen && "hover:cursor-pointer"
+      )}
+      onClick={handleClick}
+    >
+      <p
+        className={twMerge(
+          "text-sm whitespace-pre-wrap break-words",
+          !isOpen && "line-clamp-4"
+        )}
+      >
+        {text}
+      </p>
+
+      <button onClick={handleClick} className="font-medium pl-4 text-sm">
+        ...{isOpen ? "show less" : "more"}
+      </button>
+    </div>
   );
 }
