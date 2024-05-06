@@ -43,6 +43,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    // console.log("page loaded");
     fetchPage(pageNum.current);
   }, []);
 
