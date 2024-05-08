@@ -3,9 +3,9 @@ import { Videos } from "../db/db.mjs";
 
 const prisma = new PrismaClient();
 
+await prisma.comment.deleteMany({});
 await prisma.video.deleteMany({});
 await prisma.channel.deleteMany({});
-await prisma.comment.deleteMany({});
 
 for (const video of Videos) {
   // create channel for video
