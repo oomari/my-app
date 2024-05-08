@@ -14,15 +14,25 @@ datasource db {
 }
 
 model Video {
-  id           Int      @id @default(autoincrement())
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id           Int       @id @default(autoincrement())
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
   title        String
   thumbnailUrl String
   views        Int
   description  String
   channelId    Int
-  channel      Channel  @relation(fields: [channelId], references: [id])
+  channel      Channel   @relation(fields: [channelId], references: [id])
+  Comment      Comment[]
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  body      String
+  videoId   Int
+  video     Video    @relation(fields: [videoId], references: [id])
 }
 
 model Channel {
