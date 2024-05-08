@@ -5,15 +5,18 @@ const prisma = new PrismaClient();
 
 await prisma.video.deleteMany({});
 await prisma.channel.deleteMany({});
+await prisma.comment.deleteMany({});
 
 for (const video of Videos) {
+  // create channel for video
   const channel = await prisma.channel.create({
     data: {
       ...video.channel,
     },
   });
 
-  await prisma.video.create({
+  // create video row in db
+  const newVideo = await prisma.video.create({
     data: {
       title: video.title,
       description: video.description,
@@ -21,6 +24,18 @@ for (const video of Videos) {
       views: video.views,
       channelId: channel.id,
     },
+  });
+
+  // grab comments
+  const comments = video.comments ?? [];
+  // for each comment create a comment row in db
+  comments.forEach(async (comment) => {
+    await prisma.comment.create({
+      data: {
+        body: comment,
+        videoId: newVideo.id,
+      },
+    });
   });
 }
 
