@@ -92,7 +92,8 @@ export default function Home() {
                   <h3 className="text-sm text-gray-500">
                     {video.channel.name}
                     <br />
-                    {millify(video.views)} views • {video.createdAt}
+                    {millify(video.views)} views •{" "}
+                    {formatDate(new Date(video.createdAt), "MM/dd/yyyy")}
                   </h3>
                 </div>
               </div>
