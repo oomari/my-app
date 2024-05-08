@@ -1418,4 +1418,127 @@ export const Videos = [
       Taken from JRE #2109 w/Abigail Shrier:
       https://open.spotify.com/episode/5uuO...,`,
   },
+  {
+    id: 19,
+    title: "CRISPY TAKEOUT ORANGE CHICKEN (No Wok Required)",
+    channel: {
+      name: "Brian Lagerstrom",
+      photoUrl:
+        "https://yt3.ggpht.com/KjDIyl35dMJkP7TWdaMWSzGIwu5speTP9yXkMJlaxjzBVmGlAN2Gr88ssLcF5Mit_JPYyxuv-A=s68-c-k-c0x00ffffff-no-rj",
+    },
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/tVlx27mBCmo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByp6Vpv8fH-OCNJ0LjainE5FJ1hg",
+    views: 1730256,
+    createdAt: "1 year ago",
+    description: `1,730,256 views  Feb 16, 2023
+      Crispy takeout style orange chicken at home can be yours. No wok required! Use my code BRIANLAGERSTROM to get $5 off your Magic Spoon cereal by clicking this link: https://magicspoon.thld.co/brianlager... and grab a box of Birthday Cake to try today! 
+      
+      ☕Like this content and want to show support? Buy me a "coffee" here: https://ko-fi.com/brianlagerstrom
+      
+      🔪MY GEAR:
+      12" NONSTICK: https://amzn.to/40ZxXEu
+      SPIDER STRAINER: https://amzn.to/3FYqcoc 
+      8QT POT: https://amzn.to/40ZAi2p
+      MICROPLANE: https://amzn.to/3xx8jcE
+      BOOS BLOCK CUTTING BOARD: https://amzn.to/341OgnD
+      10" Chef's Knife: https://amzn.to/3gBwL4q
+      ESCALI DIGITAL SCALE: https://amzn.to/30bNZO3 
+      HALF SHEET PAN + RACK: https://amzn.to/34v7CSC 
+      INSTANT READ THERMOMETER: https://www.thermoworks.com/ThermoPop...
+      QUARTER SHEET PAN + RACK: https://amzn.to/3jqDGgx
+      MY FAV STAINLESS BOWL: https://amzn.to/36j8SL6
+      
+      
+      - RECIPE - 
+      MARINADE
+      ▪1lb boneless skinless chicken breasts, large diced
+      ▪30g or 2Tbsp soy sauce
+      ▪30g or 2Tbsp mirin
+      ▪3g or 1tsp corn starch 
+      ▪4g or 1tsp baking soda 
+      
+      Cut chicken breasts into a large bite-sized dice. 
+      
+      In a bowl, whisk together soy, mirin, corn starch, and baking soda. Add chicken chunks and stir to coat. Marinate for 20 minutes. 
+      
+      BREADING AND FRYING
+      ▪400g or 3 1/3c ap flour 
+      ▪15g or 2 1/4tsp salt
+      ▪6g or 1 1/4tsp baking soda
+      ▪400g or 3 1/4c corn starch
+      ▪Water 
+      ▪Additional ap flour (about 3/350g cups)  
+      ▪Neutral oil. I’m using a bout 2qt. Oil should be around 2”/5cm deep
+      
+      Into a 2nd bowl, whisk together 400g ap flour, salt, baking soda and corn starch. In a 3rd bowl, add about ¼ of the dry breading mixture. To that small portion of dry breader, whisk in water, a little at a time, until you’re left with a loose pancake batter texture. 
+      
+      Back in bowl 2 (with dry breading only), add about 1/4c of the wet breading slurry you just made. Mix and crumble the wet into the dry, creating a dry crumbly texture. 
+      
+      Grab a 4th bowl and fill it with about 3 cups of AP flour. Add marinated chicken pieces. Mix to coat well on all sides. 
+      
+      Shake off as much of the ap flour mixture from the chicken as possible, then add chicken into the wet batter in bowl 3. Toss to coat well. 
+      
+      Now move pieces of wet battered chicken into the craggy dry breader mix (bowl 2). Mix to coat well. Transfer chicken pieces to a tray. 
+      
+      Preheat large heavy bottomed pot over medium-high heat with about 2qt of neutral oil (or about 2-3”/5-8cm of oil, leaving plenty of room at the top of your pot so oil doesn’t boil over when you add chicken) for 10 min or until oil reaches a temp of 300F/150C. Gently lower breaded chicken into the oil (use a spider to avoid splashing oil). Fry 4-5 min at 300F/150C. 
+      
+      After 4-5 min or when nuggets are a light blonde golden color, remove from oil and transfer to a wire rack to drain. 
+      
+      Increase heat under oil pot to medium high to increase oil temp to 350F/175C. Carefully lower once-cooked nuggets back into the oil to cook for about another 90 seconds or until they’ve taken on a nice golden brown color. Transfer onto a wire rack and keep warm in a low oven while you make your orange chicken sauce. 
+      
+      ORANGE CHICKEN SAUCE 
+      ▪30g or 2Tbsp neutral, high smoke point oil 
+      ▪10g or 2 cloves garlic, grated 
+      ▪10g or about a 1.5” piece ginger, grated 
+      ▪20g or 4Tbsp scallions, thinly sliced (only about bottom half/2/3 of scallions)
+      ▪125g or 1/2c chicken stock 
+      ▪75g or 1/4c mirin
+      ▪50g or 3Tbsp soy sauce 
+      ▪10g or 2tsp sesame oil 
+      ▪50g or 1/4c sugar
+      ▪25g or 1.5Tbsp rice vinegar 
+      ▪Juice of 1 large orange
+      ▪1tsp orange zest (about 8-10 healthy zests)
+      ▪5g or 2tsp corn starch
+      ▪Pinch Chile flake
+      ▪Corn starch slurry if needed (2g or 3/4tsp corn starch mixed into 4g water) 
+      
+      To make the sauce, heat a generous squeeze of neutral oil in a large nonstick pan over medium high heat. Add ginger, garlic, and scallions and cook, stirring often, for about a minute until fragrant. 
+      
+      Whisk together chicken stock, mirin, soy sauce, sesame oil, sugar, rice vin, orange zest and juice and corn starch. Add sauce to pan with ginger/garlic/scallion mixture along with a pinch of chile flakes. Bring to a simmer and reduce sauce by about half - about 2 minutes. Check consistency of sauce at this point. If it’s not thick enough to leave a trail when you run a spoon through it, stir in  a splash of corn starch slurry. Bring back to a boil and check consistency again. 
+      
+      Add cooked nuggets into pan with sauce. Gently toss to coat, careful not to over work to loosen the breading. 
+      
+      Serve over rice and top with a pinch of sesame seeds and chile flakes. 
+      
+      CHAPTERS: 
+      0:00 Intro 
+      0:10 Prepping the chicken 
+      1:10 Mixing the breading/dredge 
+      2:27 Breading the chicken
+      4:03 I really love cereal (ad) 
+      5:01 Frying chicken nuggets
+      6:47 Making orange chicken sauce
+      8:37 Finishing the dish and plate up 
+      9:30 Let’s eat this thing
+      
+      **DISCLAIMER: links may be affiliate links. If you buy these products using these links I'll receive a small commission.`,
+  },
+  {
+    id: 20,
+    title:
+      "Journalist Abigail Shrier on Gen Z's Anxiety Problem and Why Therapy May Not Be the Solution",
+    channel: {
+      name: "PowerfulJRE",
+      photoUrl:
+        "https://yt3.ggpht.com/ytc/AIdro_ngyFhR8IKCPHaYFjOj4hk5ayuAnmBWO1fQBcFYJA=s68-c-k-c0x00ffffff-no-rj",
+    },
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/z72hgYk-5iI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnKZicODOnvFa0TgX6lnp-NMmvwA",
+    views: 1200000,
+    createdAt: "2 weeks ago",
+    description: `1,644,199 views  Feb 27, 2024  #2109
+      Taken from JRE #2109 w/Abigail Shrier:
+      https://open.spotify.com/episode/5uuO...,`,
+  },
 ];
