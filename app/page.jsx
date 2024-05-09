@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import NavBar from "../../../components/NavBar.jsx";
-import SideBar from "../../../components/SideBar.jsx";
+import NavBar from "../components/NavBar.jsx";
+import SideBar from "../components/SideBar.jsx";
 import millify from "millify";
 import Link from "next/link.js";
 import { useRouter } from "next/navigation.js";
