@@ -11,7 +11,7 @@ export async function GET(request, { params }) {
   const { searchParams } = new URL(request.url);
   const page = searchParams.get("page") ?? 1;
 
-  const PAGE_SIZE = 8;
+  const PAGE_SIZE = 12;
   const prisma = new PrismaClient();
   const videos = await prisma.video.findMany({
     include: {
