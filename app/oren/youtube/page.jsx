@@ -62,12 +62,12 @@ export default function Home() {
       <section className="bg-white absolute left-56 top-14 right-0 bottom-0 overflow-y-auto px-8">
         <div className="flex gap-x-2 overflow-x-auto no-scrollbar py-2">
           {tags.map((tag) => (
-            <button className="bg-gray-100 px-4 py-2 rounded-xl whitespace-nowrap font-medium text-sm ">
+            <button className="bg-gray-100 hover:bg-gray-200 px-4 py-1 rounded-lg whitespace-nowrap font-medium text-sm ">
               {tag}
             </button>
           ))}
         </div>
-        <div className="bg-white grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-10 py-2">
+        <div className="bg-white grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-10 py-2">
           {videos.map((video) => (
             <div
               data-name="video-card"
