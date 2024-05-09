@@ -58,23 +58,25 @@ export default function Watch() {
                     />
                   </div>
                   <div className="ml-2 flex flex-col ">
-                    <h1 className="whitespace-nowrap">{video.channel?.name}</h1>
+                    <h1 className="whitespace-nowrap font-semibold">
+                      {video.channel?.name}
+                    </h1>
                     <h3 className="text-xs text-gray-500">
                       {millify(video.views)} views
                     </h3>
                   </div>
                   <div className="mx-6 flex gap-x-1">
-                    <button className="bg-gray-100 border-1 text-sm font-semibold rounded-full w-16 h-9">
+                    <button className="bg-gray-100 hover:bg-gray-200 border-1 text-sm font-semibold rounded-full w-16 h-9">
                       Join
                     </button>
-                    <button className="bg-gray-100 border-1 text-sm font-semibold rounded-full w-24 h-9">
+                    <button className="bg-black text-white border-1 hover:bg-gray-200 text-sm font-semibold rounded-full w-24 h-9">
                       Subscribe
                     </button>
                   </div>
                 </div>
 
                 <div className="flex gap-x-2">
-                  <div className="flex items-center justify-center rounded-full border-1 w-32 h-9 bg-gray-100 gap-x-2">
+                  <div className="flex items-center justify-center rounded-full border-1 w-32 h-9 bg-gray-100 hover:bg-gray-200 gap-x-2">
                     <button className="flex gap-x-2 ">
                       <BiLike className="size-5 " />
                       <div className="text-sm font-medium">{millify(5400)}</div>
@@ -84,17 +86,17 @@ export default function Watch() {
                       <BiDislike className="size-5" />
                     </button>
                   </div>
-                  <button className="bg-gray-100 w-24 h-9 rounded-full font-semibold text-sm flex items-center justify-center gap-x-2">
+                  <button className="bg-gray-100 hover:bg-gray-200 w-24 h-9 rounded-full font-semibold text-sm flex items-center justify-center gap-x-2">
                     <PiShareFatLight className="size-5" /> Share
                   </button>
-                  <button className="bg-gray-100 rounded-full hidden md:block lg:hidden xl:block w-[35%] h-9">
+                  <button className="bg-gray-100 hover:bg-gray-200 rounded-full hidden md:block lg:hidden xl:block w-[35%] h-9">
                     <div className="flex items-center justify-center gap-x-2">
                       <LiaDownloadSolid className="size-5" />
                       <div className=" text-sm font-semibold ">Download</div>
                     </div>
                   </button>
 
-                  <button className="flex justify-center rounded-full bg-gray-100 size-9 text-xl">
+                  <button className="flex justify-center rounded-full bg-gray-100 hover:bg-gray-200 size-9 text-xl">
                     ...
                   </button>
                 </div>
@@ -102,7 +104,7 @@ export default function Watch() {
               <Description text={video.description} />
             </div>
           </section>
-          <section className="hidden lg:flex lg:w-1/3 pt-6 pr-6">
+          <section className="hidden lg:flex lg:w-1/3 pt-6 pr-6 h-[1000px] overflow-y-auto">
             <div
               data-name="video cards"
               className="gap-y-4 w-full flex flex-col"
