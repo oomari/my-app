@@ -17,15 +17,15 @@ export default function NavBar() {
       </div>
       <div className="flex items-center w-1/2 gap-x-4">
         <SearchInput />
-        <BiSolidMicrophone className="size-6" />
+        <BiSolidMicrophone className="size-6 flex-none" />
       </div>
       <div
         data-name="right-buttons"
         className="flex items-center justify-between gap-4"
       >
-        <MdVideoCameraFront className="size-6" />
-        <IoMdNotificationsOutline className="size-6" />
-        <UserIcon className="size-7" />
+        <MdVideoCameraFront className="size-6 flex-none" />
+        <IoMdNotificationsOutline className="size-6 flex-none" />
+        <UserIcon className="size-7 flex-none" />
       </div>
     </nav>
   );
