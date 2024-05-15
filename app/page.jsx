@@ -59,7 +59,7 @@ export default function Home() {
     <main>
       <NavBar />
       <SideBar />
-      <section className="bg-white absolute left-56 top-14 right-0 bottom-0 overflow-y-auto px-8">
+      <section className="bg-white absolute left-1/3 md:left-56 top-14 right-0 bottom-0 overflow-y-auto px-8">
         <div className="flex gap-x-2 overflow-x-auto no-scrollbar py-2">
           {tags.map((tag) => (
             <button className="bg-gray-100 hover:bg-gray-200 px-4 py-1 rounded-lg whitespace-nowrap font-medium text-sm ">

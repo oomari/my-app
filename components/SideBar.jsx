@@ -10,7 +10,7 @@ import { LuClock4 } from "react-icons/lu";
 
 export default function SideBar() {
   return (
-    <aside className="bg-white w-56 fixed left-0 top-14 bottom-0 overflow-y-auto">
+    <aside className="bg-white w-1/3 md:w-56 fixed left-0 top-14 bottom-0 overflow-y-auto">
       <div className="flex flex-col p-2">
         <button className="flex px-3 py-2 items-center gap-x-5 rounded-xl text-sm hover:bg-gray-100">
           <HomeIcon className="w-1/5 size-6" />
