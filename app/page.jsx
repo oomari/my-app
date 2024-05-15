@@ -74,7 +74,7 @@ export default function Home() {
               className="flex flex-col gap-y-3"
               key={video.id}
             >
-              <Link href={`/oren/youtube/watch/${video.id}`}>
+              <Link href={`/watch/${video.id}`}>
                 <img src={video.thumbnailUrl} className="rounded-xl" />
               </Link>
 
