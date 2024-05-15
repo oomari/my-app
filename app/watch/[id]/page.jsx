@@ -112,7 +112,7 @@ export default function Watch() {
               {suggestedVideos.map((video) => (
                 <div data-name="video-card" className="flex group">
                   <Link
-                    href={`/oren/youtube/watch/${video.id}`}
+                    href={`/watch/${video.id}`}
                     className="flex gap-x-2 items-start"
                   >
                     <img
