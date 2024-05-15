@@ -11,7 +11,7 @@ export default function NavBar() {
     <nav className="z-[1] h-14 bg-white sticky top-0 left-0 right-0 flex items-center justify-between px-4 md:px-6 overflow-hidden">
       <div className="flex items-center gap-x-4">
         <Bars3Icon className="h-6" />
-        <Link href="/oren/youtube">
+        <Link href="/">
           <Image src={YoutubeLogo} className="w-28" alt="Youtube Logo" />
         </Link>
       </div>
